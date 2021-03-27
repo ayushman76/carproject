@@ -239,10 +239,12 @@ padding:60px;
     scroll-behavior: smooth;
 }
 .crouselitem>ul>li,.crouselitem01>ul>li{
-	display: inline!important;
-	border: 1px solid rgb(211 211 211 / 95%);
-	padding:10px;
-	margin:10px 10px;
+    display: inline!important;
+    border: 1px solid rgb(211 211 211 / 0%);
+    padding: 10px;
+    margin: 10px -3px;
+    box-shadow: 0 1px 3px rgb(36 39 44 / 15%);
+    border-radius: 2px;
 }
 .butn>a{
 	text-align:center!important; 
@@ -343,11 +345,14 @@ border-bottom: 2px solid rgb(255 165 0);
     text-overflow: ellipsis;
 }
 .crousel_item>ul>li>a>img{
-	width: 316px;
+	 width: 359px;
     height: 150px;
-    border-radius: 10px;
-    margin: 31px 10px;
+    border-radius: 16px;
+    /* margin: 31px 71px; */
     object-fit: cover;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-align: start;
+    padding: 10px;
 
 }
 .crousel_item01>ul>li>a>img{
@@ -362,10 +367,18 @@ ol{
     display:none!important
 }
 .crousel_item>ul,.crousel_item01>ul {
-    display: inline-flex;
-    width: 100%;
-    overflow: scroll;
-    scroll-behavior: smooth;
+	display: inline-flex;
+	width: 100%;
+	overflow: scroll;
+	scroll-behavior: smooth;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	-webkit-overflow-scrolling: touch;
+	overflow: auto;
+	scroll-snap-align: start;
+	flex-shrink: 1;
+	transform-origin: center center;
+	scroll-snap-type: x mandatory;
 }
 .recommended_cars{
     padding: 10px;
@@ -373,8 +386,9 @@ ol{
 .latest_cars {
 padding:10px;}
 .crouselitem>ul>li>a>.car_img>img,.crouselitem01>ul>li>a>.car_img>img {
-    width: 120px!important;
+      width: 120px!important;
     margin: 10px 11px;
+    scroll-snap-align: start;
 }
 .ofr_btn {
     padding: 0px 0px;
@@ -388,10 +402,17 @@ padding:10px;}
  display:none;
 }
 .crouselitem>ul,.crouselitem01>ul{
-    display: inline-flex;
+   display: inline-flex;
     width: 100%;
     overflow: scroll;
     scroll-behavior: smooth;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    overflow: auto;
+    scroll-snap-align: start;
+    flex-shrink: 1;
+    transform-origin: center center;
+    scroll-snap-type: x mandatory;
 }
 .col-md-6{
 	float:left;
@@ -399,6 +420,8 @@ padding:10px;}
 }
 .tab_list>ul>li{
    display:inline-block;
+       padding: 0px 6px;
+  
 }
 .tab01,.tab02,.tab03,.tab04{
 	padding: 10px;
